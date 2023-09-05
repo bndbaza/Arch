@@ -1,0 +1,69 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "wlr/mode", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/language","network","pulseaudio","battery","temperature"],
+    "gtk-layer-shell": "true",
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "tooltip": false 
+    },
+    "tray": {
+        "icon-size": 1 
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "scroll-step": 5.0,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        }
+    },
+    "battery": {
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+    },
+    "cpu": {
+    "interval": 2,
+    "format": "{}% ",
+    "max-length": 10
+    },
+     "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": " {temperatureC}°C"
+    },
+    "network": {
+    "interface": "wg0",
+    "format": "{ifname}",
+    "format-wifi": "  {essid}",
+    "format-ethernet": "WG",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+    },
+    "hyprland/language": {
+	"format": "{}",
+	"format-en": "en",
+	"format-ru": "ru",
+    },
+
+}

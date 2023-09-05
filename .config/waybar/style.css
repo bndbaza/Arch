@@ -1,0 +1,45 @@
+* {
+    border: none;
+    border-radius: 15;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+    color: white;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+window#waybar {
+    background: rgba(255, 0, 0,0);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 0 0;
+    background: transparent;
+    color: red;
+    /* border-bottom: 3px solid transparent; */
+}
+
+#workspaces button.active {
+    background: black;
+    /* border-bottom: 3px solid white; */
+    color: red;
+}
+
+#clock, #pulseaudio, #temperature, #battery, #language {
+    padding: 0 0px;
+    margin: 0 5px;
+    background: rgba(0,0,0,0);
+}
+
+#mode {
+    background: red;
+    border-bottom: 3px solid white;
+}
+
+/* #clock {
+    background-color: #64727D;
+} */
